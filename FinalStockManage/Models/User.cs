@@ -17,7 +17,10 @@ namespace FinalStockManage.Models
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-       
+
+        [DataType(DataType.PhoneNumber)]
+        [Display(Name ="Phone Number")]
+        public int ?ContactNumber { get; set; }
         public bool IsActive { get; set; }=true;
         
        

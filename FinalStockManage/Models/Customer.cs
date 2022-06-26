@@ -8,11 +8,11 @@ namespace FinalStockManage.Models
         [Key]
         public int CustomerId { get; set; }
         [Required]
-        [StringLength(50)]
+        [StringLength(50,MinimumLength =3)]
         [Display(Name ="First Name")]
         public string FirstName { get; set; }
         [Required]
-        [StringLength(50)]
+        [StringLength(50,MinimumLength =3)]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]
@@ -20,6 +20,7 @@ namespace FinalStockManage.Models
         [Display(Name = "Address")]
         public string Address { get; set; }
         [Required]
+        [DataType(DataType.PhoneNumber)]
         [Display(Name = "Phone Number")]
         public string ContactNumber { get; set; }
 

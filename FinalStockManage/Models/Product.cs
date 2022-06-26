@@ -15,10 +15,11 @@ namespace FinalStockManage.Models
         [Display(Name ="Model of Product")]
         public string Model { get; set; }
         [Display(Name ="Serial Number of Product")]
+        
         public int SerialNumber { get; set; }
         [Display(Name ="Quantity of Product available")]
         public int Availability { get; set; }
-        
+        [DataType(DataType.DateTime)]
         public DateTime DateSold { get; set; }
         [Display(Name ="Type of Product Unit Sold")]
         public string UnitType { get; set; }
